@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CesarSchoolTi – Soluções em TI</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/index.css">
+  <style>
+    /* sobrescreve o estilo do arquivo externo apenas nesta página */
+    main > section > h2::before { color: var(--laranja-escuro); }
+    .servicos article { background: var(--claro); }
+    /* altura menor que a de base.css (320px) para a barra de rolagem aparecer */
+    #fundadores .rolagem { max-height: 150px; }
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <img src="img/Designer.png" alt="Logo da CesarSchoolTi" height="90">
+      <p>Tecnologia que impulsiona o seu negócio, do suporte à nuvem.</p>
+    </div>
+    <nav>
+      <a href="login.html">Login</a>
+      <a href="cadastro.html">Cadastre-se</a>
+      <a href="carrinho.html" id="link-servicos" class="oculto">Solicitar serviços de TI</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="historia">
+      <h2>Nossa história</h2>
+      <p>A <strong>CesarSchoolTi</strong> nasceu em <em>2026</em>, de uma aula de projetos, quando três amigos resolveram unir experiência em redes, desenvolvimento e suporte. Hoje ajudamos os <mark>processos internos da CESAR School</mark> com um time especializado e atendimento próximo.</p>
+      <p>Nosso compromisso é simples: <strong>resolver rápido, explicar claramente e cobrar com transparência</strong>.</p>
+    </section>
+
+    <section id="video">
+      <h2>Conheça a empresa</h2>
+      <div class="video">
+        <iframe src="https://www.youtube.com/embed/MaN0iVrcF50?si=K2EAsASO1U101MpL" title="Vídeo institucional da CesarSchoolTi" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+      </div>
+      <p style="margin-top: 0.5rem; text-align: center; font-size: 0.9rem;">Vídeo institucional – 1 minuto</p>
+    </section>
+
+    <section id="galeria">
+      <h2>Nossas instalações e equipe</h2>
+      <div class="galeria">
+        <figure><img src="img/SalaDeOperaçõesTi.webp" alt="Sala de operações com mesas redondas, cadeiras e tela de projeção"><figcaption>Sala de operações</figcaption></figure>
+        <figure><img src="img/Datacenters.webp" alt="Corredor do datacenter com fileiras de racks de servidores"><figcaption>Datacenter</figcaption></figure>
+        <figure><img src="img/EquipeDeDesenvolvimento.webp" alt="Equipe de desenvolvimento reunida em volta de uma mesa analisando projetos"><figcaption>Equipe de desenvolvimento</figcaption></figure>
+        <figure><img src="img/CentralDeSuporte.webp" alt="Central de suporte com notebooks e quadro de post-its"><figcaption>Central de suporte</figcaption></figure>
+      </div>
+    </section>
+
+    <section id="servicos">
+      <h2>Principais serviços</h2>
+      <div class="servicos">
+        <article class="card destaque"><h3>Suporte técnico</h3><p>Atendimento remoto e presencial para o dia a dia da sua equipe.</p></article>
+        <article class="card destaque"><h3>Redes e infraestrutura</h3><p>Projeto, instalação e monitoramento de redes corporativas.</p></article>
+        <article class="card destaque"><h3>Desenvolvimento</h3><p>Sites, sistemas e integrações sob medida.</p></article>
+        <article class="card destaque"><h3>Backup e nuvem</h3><p>Seus dados protegidos e disponíveis, sempre.</p></article>
+      </div>
+    </section>
+
+    <section id="fundadores">
+      <h2>Fundadores</h2>
+      <div class="rolagem">
+        <table>
+          <thead>
+            <tr><th>Cargo</th><th>Nome</th><th>Breve CV</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>CEO</td><td>João Pedro Mamede</td><td>AI Engineer, com experiência em GenAI e machine learning, além de desenvolvimento de software.</td></tr>
+            <tr><td>CTO</td><td>João Micucci</td><td>Cloud and Software Engineer, arquiteto de sistemas e computação em nuvem.</td></tr>
+            <tr><td>COO</td><td>Mateus Ribeiro</td><td>Administrador e engenheiro de software.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <!-- tabela usada para o layout do rodapé em três blocos -->
+    <table class="layout-rodape">
+      <tr>
+        <td>
+          <h3>Contatos</h3>
+          <ul>
+            <li>Telefone: (81) 3333-4444</li>
+            <li>WhatsApp: (81) 99999-8888</li>
+            <li><a href="mailto:contato@CesarSchoolTi.com.br">contato@CesarSchoolTi.com.br</a></li>
+          </ul>
+        </td>
+        <td>
+          <h3>Endereço</h3>
+          <address>Rua do Apolo, 77<br>Recife, Pernambuco – PE<br>CEP 50030-230</address>
+        </td>
+        <td>
+          <h3>Formas de pagamento</h3>
+          <div class="pagamentos">
+            <figure><img src="img/pag-pix.svg" alt="Pix"></figure>
+            <figure><img src="img/pag-cartao.svg" alt="Cartão de crédito"></figure>
+            <figure><img src="img/pag-boleto.svg" alt="Boleto bancário"></figure>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </footer>
+
+  <script src="js/sessao.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login de clientes – CesarSchoolTi</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/forms.css">
+</head>
+<body class="form-pagina">
+  <main>
+    <section class="card">
+      <img class="logo" src="img/Designer.png" alt="Logo da CesarSchoolTi" height="90">
+      <h1>Login de clientes</h1>
+      <form id="form-login" onsubmit="return false;">
+        <table class="tabela-form">
+          <tr><td><label for="login">Login (e-mail)</label></td><td><input type="text" id="login" autocomplete="username"></td></tr>
+          <tr><td><label for="senha">Senha</label></td><td><input type="password" id="senha" autocomplete="current-password"></td></tr>
+        </table>
+        <p id="msg" class="mensagem" role="alert"></p>
+        <div class="botoes">
+          <button type="button" id="btn-login" class="btn">Realizar Login</button>
+          <button type="button" id="btn-limpar" class="btn btn-secundario">Limpar</button>
+        </div>
+      </form>
+      <div class="links">
+        <a href="troca-senha.html">Esqueci / quero trocar minha senha</a>
+        <a href="cadastro.html">Ainda não sou cliente: cadastre-se</a>
+        <a href="index.html" style="font-size: 0.8rem;">← Voltar à página inicial</a>
+      </div>
+    </section>
+  </main>
+  <script src="js/validacoes.js"></script>
+  <script src="js/login.js"></script>
+</body>
+</html>

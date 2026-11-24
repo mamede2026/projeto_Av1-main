@@ -1,0 +1,12 @@
+main > section { margin-bottom: 2rem; }
+
+.dados-usuario { display: flex; flex-wrap: wrap; gap: 2rem; }
+.dados-usuario .valor { font-weight: 700; font-family: var(--fonte-texto); font-size: 1rem; }
+
+.campos-nova { max-width: 560px; }
+.campos-nova td:first-child { width: 40%; font-weight: 700; }
+.campos-nova .valor { font-family: var(--fonte-texto); font-size: 1rem; }
+
+#status-novo { color: var(--ok); font-weight: 700; }
+
+td.num, th.num { text-align: right; }

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="220" height="64" viewBox="0 0 220 64">
+  <rect x="4" y="8" width="48" height="48" rx="10" fill="#0b2545"/>
+  <path d="M18 26l-8 6 8 6M38 26l8 6-8 6M32 22l-4 20" stroke="#13c4d8" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="62" y="30" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="700" fill="#0b2545">CesarSchoolTi</text>
+  <text x="62" y="49" font-family="Segoe UI, Arial, sans-serif" font-size="13" letter-spacing="2" fill="#13c4d8">SOLUÇÕES EM TI</text>
+</svg>

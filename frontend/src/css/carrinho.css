@@ -1,0 +1,32 @@
+.pagina-carrinho > section { margin-bottom: 2rem; }
+
+.dados-usuario { display: flex; flex-wrap: wrap; gap: 2rem; }
+.dados-usuario .valor { font-weight: 700; font-family: var(--fonte-texto); font-size: 1rem; }
+
+.campos-nova { max-width: 560px; }
+.campos-nova td:first-child { width: 40%; font-weight: 700; }
+.campos-nova .valor { font-family: var(--fonte-texto); font-size: 1rem; }
+
+.status-novo { color: var(--ok); font-weight: 700; }
+
+.pagina-carrinho tbody tr.linha-nova { background: #fff4e8; }
+.etiqueta-nova {
+  display: inline-block;
+  padding: 0 0.5rem;
+  border-radius: 999px;
+  background: var(--laranja);
+  color: var(--preto);
+  font-family: var(--fonte-titulo);
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.aviso-pendente {
+  margin-top: 0.75rem;
+  padding: 0.5rem 0.75rem;
+  border-left: 4px solid var(--laranja);
+  background: #fff;
+  font-size: 0.9rem;
+}
+
+#solicitacoes .mensagem { margin-top: 0.75rem; }

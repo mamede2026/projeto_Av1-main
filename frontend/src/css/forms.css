@@ -1,0 +1,51 @@
+.form-pagina {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.form-pagina main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.form-pagina .card { width: 100%; max-width: 560px; }
+
+.form-pagina .logo { display: block; margin: 0 auto 1rem; border-radius: 10px; }
+.form-pagina h1 { text-align: center; margin-bottom: 1rem; }
+
+.tabela-form { background: transparent; }
+.tabela-form td { border: 0; padding: 0.4rem 0.3rem; vertical-align: top; }
+.tabela-form tr:nth-child(even) { background: transparent; }
+.tabela-form td:first-child { width: 36%; }
+
+.regras {
+  display: block;
+  padding: 0.6rem;
+  margin: 0.5rem 0;
+  border-left: 4px solid var(--laranja);
+  background: var(--claro);
+  font-size: 0.85rem;
+}
+
+.regras + p { margin-top: 0.75rem; }
+
+.botoes {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.links { margin-top: 1rem; text-align: center; font-size: 0.9rem; }
+.links a { display: block; margin: 0.25rem 0; }
+
+.opcao-radio { display: block; }
+
+.obs-obrigatorio { font-size: 0.85rem; color: #555; text-align: center; }
+.form-pagina .subtitulo { margin-top: 2rem; font-size: 1.1rem; }
+.servicos-cadastrados { max-height: 240px; }
+td.num, th.num { text-align: right; }

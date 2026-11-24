@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Troca de senha de clientes – CesarSchoolTi</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/forms.css">
+</head>
+<body class="form-pagina">
+  <main>
+    <section class="card">
+      <img class="logo" src="img/Designer.png" alt="Logo da CesarSchoolTi" height="90">
+      <h1>Troca de senha de clientes</h1>
+      <form id="form-troca" onsubmit="return false;">
+        <table class="tabela-form">
+          <tr><td><label for="login">Login (e-mail)</label></td><td><input type="text" id="login"></td></tr>
+          <tr><td><label for="senha">Nova senha</label></td><td><input type="password" id="senha"></td></tr>
+          <tr><td><label for="confirma">Confirmação de senha</label></td><td><input type="password" id="confirma"></td></tr>
+        </table>
+        <output class="regras" id="regras">
+          A senha deve ter <strong>no mínimo 6 caracteres</strong>, com pelo menos
+          <strong>um número</strong>, <strong>uma letra maiúscula</strong> e
+          <strong>um caractere especial permitido</strong>.
+        </output>
+        <p><strong>Especiais permitidos:</strong> @ # $ % &amp; * ! ? / \ | - _ + . =</p>
+        <p><strong>Não permitidos:</strong> ¨ { } [ ] ´ ` ~ ^ : ; &lt; &gt; , “ ‘</p>
+        <p id="msg" class="mensagem" role="alert"></p>
+        <div class="botoes">
+          <button type="button" id="btn-troca" class="btn">Troca Senha</button>
+          <button type="button" id="btn-limpar" class="btn btn-secundario">Limpar</button>
+        </div>
+      </form>
+    </section>
+  </main>
+  <script src="js/validacoes.js"></script>
+  <script src="js/troca-senha.js"></script>
+</body>
+</html>

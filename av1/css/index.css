@@ -1,0 +1,46 @@
+main > section { margin-bottom: 2.5rem; }
+
+main > section > h2::before {
+  content: "▍";
+  color: var(--laranja);
+}
+
+/* vídeo responsivo */
+.video { position: relative; padding-bottom: 56.25%; height: 0; }
+.video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+
+/* galeria em CSS Grid */
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 1rem;
+}
+
+.galeria figure { background: #fff; border: 1px solid var(--cinza); border-radius: 8px; overflow: hidden; }
+/* fotos com proporções diferentes: mesma altura, recortadas sem distorcer */
+.galeria img { display: block; width: 100%; height: 200px; object-fit: cover; }
+.galeria figcaption { padding: 0.4rem; text-align: center; font-size: 0.85rem; }
+
+/* serviços em Flexbox */
+.servicos { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; }
+.servicos article { flex: 1 1 200px; text-align: center; }
+.servicos article h3 { margin-bottom: 0.4rem; }
+.servicos .destaque { border-top: 4px solid var(--laranja); }
+
+#fundadores td:first-child { font-weight: 700; }
+
+/* irmãos gerais: parágrafos que seguem o título da história */
+#historia > h2 ~ p { text-indent: 1.5em; }
+
+/* tabela de layout do rodapé: sem aparência de tabela de dados */
+.layout-rodape,
+.layout-rodape td { background: transparent; border: 0; vertical-align: top; }
+.layout-rodape td { width: 33%; padding: 0 1rem; }
+
+@media (max-width: 600px) {
+  .layout-rodape td { display: block; width: 100%; padding: 0.5rem 0; }
+}
+
+/* pagamentos no rodapé */
+.pagamentos { display: flex; gap: 0.5rem; }
+.pagamentos img { width: 70px; border-radius: 6px; }

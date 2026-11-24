@@ -1,0 +1,34 @@
+.pagina-inicial > section { margin-bottom: 2.5rem; }
+
+.pagina-inicial > section > h2::before {
+  content: "▍";
+
+  color: var(--laranja-escuro);
+}
+
+.video { position: relative; padding-bottom: 56.25%; height: 0; }
+.video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 1rem;
+}
+
+.galeria figure { background: #fff; border: 1px solid var(--cinza); border-radius: 8px; overflow: hidden; }
+
+.galeria img { display: block; width: 100%; height: 200px; object-fit: cover; }
+.galeria figcaption { padding: 0.4rem; text-align: center; font-size: 0.85rem; }
+
+.servicos { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; }
+.servicos article { flex: 1 1 200px; text-align: center; background: var(--claro); }
+.servicos article h3 { margin-bottom: 0.4rem; }
+.servicos .destaque { border-top: 4px solid var(--laranja); }
+
+#fundadores td:first-child { font-weight: 700; }
+
+#fundadores .rolagem { max-height: 150px; }
+
+#historia > h2 ~ p { text-indent: 1.5em; }
+
+.legenda-video { margin-top: 0.5rem; text-align: center; font-size: 0.9rem; }

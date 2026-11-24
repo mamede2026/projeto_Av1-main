@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Solicitação de serviços de TI – CesarSchoolTi</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/forms.css">
+  <link rel="stylesheet" href="css/carrinho.css">
+</head>
+<body>
+  <header>
+    <div>
+      <img src="img/Designer.png" alt="Logo da CesarSchoolTi" height="90">
+      <p>Solicitação de serviços de TI</p>
+    </div>
+    <nav><a href="index.html">Página inicial</a></nav>
+  </header>
+
+  <main>
+    <section id="usuario" class="card">
+      <h2>Usuário logado</h2>
+      <div class="dados-usuario">
+        <p>Nome: <label id="usuario-nome" class="valor"></label></p>
+        <p>Login: <label id="usuario-email" class="valor"></label></p>
+      </div>
+    </section>
+
+    <section id="solicitacoes">
+      <h2>Solicitações já realizadas</h2>
+      <div class="rolagem">
+        <table>
+          <thead>
+            <tr>
+              <th>Data do pedido</th><th>Nº</th><th>Serviço</th><th>Status</th>
+              <th class="num">Preço</th><th>Data prevista</th><th>Ação</th>
+            </tr>
+          </thead>
+          <tbody id="corpo-solicitacoes"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="nova" class="card">
+      <h2>Nova solicitação</h2>
+      <table class="tabela-form campos-nova">
+        <tr><td><label for="servico">Serviço de TI</label></td>
+            <td><select id="servico"><option value="">Selecione...</option></select></td></tr>
+        <tr><td>Preço</td><td><label id="preco" class="valor">—</label></td></tr>
+        <tr><td>Prazo de atendimento</td><td><label id="prazo" class="valor">—</label></td></tr>
+        <tr><td>Data prevista de atendimento</td><td><label id="prevista" class="valor">—</label></td></tr>
+        <tr><td>Status</td><td><label id="status-novo">EM ELABORAÇÃO</label></td></tr>
+      </table>
+      <div class="botoes">
+        <button type="button" id="btn-incluir" class="btn">Incluir solicitação</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/carrinho.js"></script>
+</body>
+</html>

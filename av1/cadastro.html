@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cadastro de clientes – CesarSchoolTi</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/forms.css">
+</head>
+<body class="form-pagina">
+  <main>
+    <section class="card">
+      <img class="logo" src="img/Designer.png" alt="Logo da CesarSchoolTi" height="90">
+      <h1>Cadastro de clientes</h1>
+      <form id="form-cadastro" onsubmit="return false;">
+        <table class="tabela-form">
+          <tr><td><label for="email">E-mail (será seu login)</label></td><td><input type="text" id="email" autocomplete="username"></td></tr>
+          <tr><td><label for="senha">Senha</label></td><td><input type="password" id="senha"></td></tr>
+          <tr><td><label for="confirma">Confirmação de senha</label></td><td><input type="password" id="confirma"></td></tr>
+        </table>
+        <output class="regras" id="regras">
+          A senha deve ter <strong>no mínimo 6 caracteres</strong>, com pelo menos
+          <strong>um número</strong>, <strong>uma letra maiúscula</strong> e
+          <strong>um caractere especial permitido</strong>.
+        </output>
+        <p><strong>Especiais permitidos:</strong> @ # $ % &amp; * ! ? / \ | - _ + . =</p>
+        <p><strong>Não permitidos:</strong> ¨ { } [ ] ´ ` ~ ^ : ; &lt; &gt; , “ ‘</p>
+        <table class="tabela-form">
+          <tr><td><label for="nome">Nome completo</label></td><td><input type="text" id="nome"></td></tr>
+          <tr><td><label for="cpf">CPF</label></td><td><input type="text" id="cpf" placeholder="000.000.000-00" maxlength="14" inputmode="numeric"></td></tr>
+          <tr><td><label for="nascimento">Data de nascimento</label></td><td><input type="date" id="nascimento"></td></tr>
+          <tr><td><label for="telefone">Celular / WhatsApp (opcional)</label></td><td><input type="text" id="telefone" placeholder="(81) 91234-5678"></td></tr>
+          <tr>
+            <td>Estado civil</td>
+            <td>
+              <label><input type="radio" name="estado-civil" value="solteiro" checked> Solteiro(a)</label><br>
+              <label><input type="radio" name="estado-civil" value="casado"> Casado(a)</label><br>
+              <label><input type="radio" name="estado-civil" value="divorciado"> Divorciado(a)</label><br>
+              <label><input type="radio" name="estado-civil" value="viuvo"> Viúvo(a)</label>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="escolaridade">Escolaridade</label></td>
+            <td>
+              <select id="escolaridade">
+                <option value="1i">1º grau incompleto</option>
+                <option value="1c">1º grau completo</option>
+                <option value="2c" selected>2º grau completo</option>
+                <option value="sup">Nível superior</option>
+                <option value="pos">Pós-graduado</option>
+              </select>
+            </td>
+          </tr>
+        </table>
+        <p id="msg" class="mensagem" role="alert"></p>
+        <div class="botoes">
+          <button type="button" id="btn-incluir" class="btn">Incluir</button>
+          <button type="button" id="btn-limpar" class="btn btn-secundario">Limpar</button>
+          <button type="button" id="btn-voltar" class="btn btn-secundario">Voltar</button>
+        </div>
+      </form>
+    </section>
+  </main>
+  <script src="js/validacoes.js"></script>
+  <script src="js/cadastro.js"></script>
+</body>
+</html>
